@@ -5,8 +5,8 @@ import styles from './index.module.scss'
   const { categories = [] } = props;
 
   return (
-    <section className={styles.CategoryList}>
-      <ul>
+    <section >
+      <ul className={styles.CategoryList}>
         {categories.map((category) => (
           <CategoryListItem key={category.idCategory} category={category} />
         ))}
